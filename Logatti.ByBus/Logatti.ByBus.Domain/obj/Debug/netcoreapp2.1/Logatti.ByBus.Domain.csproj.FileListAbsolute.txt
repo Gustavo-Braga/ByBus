@@ -1,0 +1,8 @@
+C:\Users\gusta\OneDrive\Área de Trabalho\Repositorio\ByBus\Logatti.ByBus\Logatti.ByBus.Domain\bin\Debug\netcoreapp2.1\Logatti.ByBus.Domain.deps.json
+C:\Users\gusta\OneDrive\Área de Trabalho\Repositorio\ByBus\Logatti.ByBus\Logatti.ByBus.Domain\bin\Debug\netcoreapp2.1\Logatti.ByBus.Domain.dll
+C:\Users\gusta\OneDrive\Área de Trabalho\Repositorio\ByBus\Logatti.ByBus\Logatti.ByBus.Domain\bin\Debug\netcoreapp2.1\Logatti.ByBus.Domain.pdb
+C:\Users\gusta\OneDrive\Área de Trabalho\Repositorio\ByBus\Logatti.ByBus\Logatti.ByBus.Domain\obj\Debug\netcoreapp2.1\Logatti.ByBus.Domain.csproj.CoreCompileInputs.cache
+C:\Users\gusta\OneDrive\Área de Trabalho\Repositorio\ByBus\Logatti.ByBus\Logatti.ByBus.Domain\obj\Debug\netcoreapp2.1\Logatti.ByBus.Domain.AssemblyInfoInputs.cache
+C:\Users\gusta\OneDrive\Área de Trabalho\Repositorio\ByBus\Logatti.ByBus\Logatti.ByBus.Domain\obj\Debug\netcoreapp2.1\Logatti.ByBus.Domain.AssemblyInfo.cs
+C:\Users\gusta\OneDrive\Área de Trabalho\Repositorio\ByBus\Logatti.ByBus\Logatti.ByBus.Domain\obj\Debug\netcoreapp2.1\Logatti.ByBus.Domain.dll
+C:\Users\gusta\OneDrive\Área de Trabalho\Repositorio\ByBus\Logatti.ByBus\Logatti.ByBus.Domain\obj\Debug\netcoreapp2.1\Logatti.ByBus.Domain.pdb
