@@ -1,0 +1,9 @@
+C:\Users\gusta\OneDrive\Área de Trabalho\Repositorio\ByBus\Logatti.ByBus\Logatti.ByBus.Infrastructure.Dependencies\bin\Debug\netcoreapp2.1\Logatti.ByBus.Infrastructure.Dependencies.deps.json
+C:\Users\gusta\OneDrive\Área de Trabalho\Repositorio\ByBus\Logatti.ByBus\Logatti.ByBus.Infrastructure.Dependencies\bin\Debug\netcoreapp2.1\Logatti.ByBus.Infrastructure.Dependencies.dll
+C:\Users\gusta\OneDrive\Área de Trabalho\Repositorio\ByBus\Logatti.ByBus\Logatti.ByBus.Infrastructure.Dependencies\bin\Debug\netcoreapp2.1\Logatti.ByBus.Infrastructure.Dependencies.pdb
+C:\Users\gusta\OneDrive\Área de Trabalho\Repositorio\ByBus\Logatti.ByBus\Logatti.ByBus.Infrastructure.Dependencies\obj\Debug\netcoreapp2.1\Logatti.ByBus.Infrastructure.Dependencies.csprojAssemblyReference.cache
+C:\Users\gusta\OneDrive\Área de Trabalho\Repositorio\ByBus\Logatti.ByBus\Logatti.ByBus.Infrastructure.Dependencies\obj\Debug\netcoreapp2.1\Logatti.ByBus.Infrastructure.Dependencies.csproj.CoreCompileInputs.cache
+C:\Users\gusta\OneDrive\Área de Trabalho\Repositorio\ByBus\Logatti.ByBus\Logatti.ByBus.Infrastructure.Dependencies\obj\Debug\netcoreapp2.1\Logatti.ByBus.Infrastructure.Dependencies.AssemblyInfoInputs.cache
+C:\Users\gusta\OneDrive\Área de Trabalho\Repositorio\ByBus\Logatti.ByBus\Logatti.ByBus.Infrastructure.Dependencies\obj\Debug\netcoreapp2.1\Logatti.ByBus.Infrastructure.Dependencies.AssemblyInfo.cs
+C:\Users\gusta\OneDrive\Área de Trabalho\Repositorio\ByBus\Logatti.ByBus\Logatti.ByBus.Infrastructure.Dependencies\obj\Debug\netcoreapp2.1\Logatti.ByBus.Infrastructure.Dependencies.dll
+C:\Users\gusta\OneDrive\Área de Trabalho\Repositorio\ByBus\Logatti.ByBus\Logatti.ByBus.Infrastructure.Dependencies\obj\Debug\netcoreapp2.1\Logatti.ByBus.Infrastructure.Dependencies.pdb

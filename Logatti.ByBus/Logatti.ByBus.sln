@@ -7,9 +7,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - Presentation", "1 - Pre
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Logatti.ByBus.API", "Logatti.ByBus.API\Logatti.ByBus.API.csproj", "{E872D5FB-F418-4A50-86E0-15B179752628}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 - Infrastructure", "2 - Infrastructure", "{1D6F18CE-D81A-412B-A73A-0F01EDEEF265}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - Infrastructure", "3 - Infrastructure", "{1D6F18CE-D81A-412B-A73A-0F01EDEEF265}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.1 - Data", "2.1 - Data", "{EC49D79B-8047-4F51-ABFF-EDEBD0344BB9}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3.1 - Data", "3.1 - Data", "{EC49D79B-8047-4F51-ABFF-EDEBD0344BB9}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Logatti.ByBus.Infrastructure.Data.Command", "Logatti.ByBus.Infrastructure.Data.Command\Logatti.ByBus.Infrastructure.Data.Command.csproj", "{01C25865-8083-4EB6-B524-EF058F0C3782}"
 EndProject
