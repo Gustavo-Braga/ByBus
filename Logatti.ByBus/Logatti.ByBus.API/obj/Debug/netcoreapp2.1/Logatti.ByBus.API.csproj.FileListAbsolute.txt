@@ -1,0 +1,14 @@
+C:\Users\gusta\OneDrive\Área de Trabalho\Repositorio\ByBus\Logatti.ByBus\Logatti.ByBus.API\bin\Debug\netcoreapp2.1\Logatti.ByBus.API.deps.json
+C:\Users\gusta\OneDrive\Área de Trabalho\Repositorio\ByBus\Logatti.ByBus\Logatti.ByBus.API\bin\Debug\netcoreapp2.1\Logatti.ByBus.API.runtimeconfig.json
+C:\Users\gusta\OneDrive\Área de Trabalho\Repositorio\ByBus\Logatti.ByBus\Logatti.ByBus.API\bin\Debug\netcoreapp2.1\Logatti.ByBus.API.runtimeconfig.dev.json
+C:\Users\gusta\OneDrive\Área de Trabalho\Repositorio\ByBus\Logatti.ByBus\Logatti.ByBus.API\bin\Debug\netcoreapp2.1\Logatti.ByBus.API.dll
+C:\Users\gusta\OneDrive\Área de Trabalho\Repositorio\ByBus\Logatti.ByBus\Logatti.ByBus.API\bin\Debug\netcoreapp2.1\Logatti.ByBus.API.pdb
+C:\Users\gusta\OneDrive\Área de Trabalho\Repositorio\ByBus\Logatti.ByBus\Logatti.ByBus.API\obj\Debug\netcoreapp2.1\Logatti.ByBus.API.csprojAssemblyReference.cache
+C:\Users\gusta\OneDrive\Área de Trabalho\Repositorio\ByBus\Logatti.ByBus\Logatti.ByBus.API\obj\Debug\netcoreapp2.1\Logatti.ByBus.API.csproj.CoreCompileInputs.cache
+C:\Users\gusta\OneDrive\Área de Trabalho\Repositorio\ByBus\Logatti.ByBus\Logatti.ByBus.API\obj\Debug\netcoreapp2.1\Logatti.ByBus.API.RazorAssemblyInfo.cache
+C:\Users\gusta\OneDrive\Área de Trabalho\Repositorio\ByBus\Logatti.ByBus\Logatti.ByBus.API\obj\Debug\netcoreapp2.1\Logatti.ByBus.API.RazorAssemblyInfo.cs
+C:\Users\gusta\OneDrive\Área de Trabalho\Repositorio\ByBus\Logatti.ByBus\Logatti.ByBus.API\obj\Debug\netcoreapp2.1\Logatti.ByBus.API.AssemblyInfoInputs.cache
+C:\Users\gusta\OneDrive\Área de Trabalho\Repositorio\ByBus\Logatti.ByBus\Logatti.ByBus.API\obj\Debug\netcoreapp2.1\Logatti.ByBus.API.AssemblyInfo.cs
+C:\Users\gusta\OneDrive\Área de Trabalho\Repositorio\ByBus\Logatti.ByBus\Logatti.ByBus.API\obj\Debug\netcoreapp2.1\Logatti.ByBus.API.RazorTargetAssemblyInfo.cache
+C:\Users\gusta\OneDrive\Área de Trabalho\Repositorio\ByBus\Logatti.ByBus\Logatti.ByBus.API\obj\Debug\netcoreapp2.1\Logatti.ByBus.API.dll
+C:\Users\gusta\OneDrive\Área de Trabalho\Repositorio\ByBus\Logatti.ByBus\Logatti.ByBus.API\obj\Debug\netcoreapp2.1\Logatti.ByBus.API.pdb
