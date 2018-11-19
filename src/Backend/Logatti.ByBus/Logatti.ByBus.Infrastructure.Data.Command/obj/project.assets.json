@@ -687,11 +687,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\gusta\\OneDrive\\Área de Trabalho\\Repositorio\\ByBus\\Logatti.ByBus\\Logatti.ByBus.Infrastructure.Data.Command\\Logatti.ByBus.Infrastructure.Data.Command.csproj",
+      "projectUniqueName": "C:\\Users\\gusta\\OneDrive\\Área de Trabalho\\Repositorio\\ByBus\\src\\Backend\\Logatti.ByBus\\Logatti.ByBus.Infrastructure.Data.Command\\Logatti.ByBus.Infrastructure.Data.Command.csproj",
       "projectName": "Logatti.ByBus.Infrastructure.Data.Command",
-      "projectPath": "C:\\Users\\gusta\\OneDrive\\Área de Trabalho\\Repositorio\\ByBus\\Logatti.ByBus\\Logatti.ByBus.Infrastructure.Data.Command\\Logatti.ByBus.Infrastructure.Data.Command.csproj",
+      "projectPath": "C:\\Users\\gusta\\OneDrive\\Área de Trabalho\\Repositorio\\ByBus\\src\\Backend\\Logatti.ByBus\\Logatti.ByBus.Infrastructure.Data.Command\\Logatti.ByBus.Infrastructure.Data.Command.csproj",
       "packagesPath": "C:\\Users\\gusta\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\gusta\\OneDrive\\Área de Trabalho\\Repositorio\\ByBus\\Logatti.ByBus\\Logatti.ByBus.Infrastructure.Data.Command\\obj\\",
+      "outputPath": "C:\\Users\\gusta\\OneDrive\\Área de Trabalho\\Repositorio\\ByBus\\src\\Backend\\Logatti.ByBus\\Logatti.ByBus.Infrastructure.Data.Command\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

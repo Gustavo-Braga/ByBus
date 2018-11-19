@@ -2,6 +2,18 @@
   "version": 3,
   "targets": {
     ".NETCoreApp,Version=v2.1": {
+      "MediatR/4.0.1": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.1"
+        },
+        "compile": {
+          "lib/netstandard1.1/MediatR.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.1/MediatR.dll": {}
+        }
+      },
       "Microsoft.NETCore.App/2.1.0": {
         "type": "package",
         "dependencies": {
@@ -207,10 +219,34 @@
         "build": {
           "build/netstandard2.0/NETStandard.Library.targets": {}
         }
+      },
+      "Logatti.ByBus.CrossCutting.Notifications/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.1",
+        "dependencies": {
+          "MediatR": "4.0.1"
+        },
+        "compile": {
+          "bin/placeholder/Logatti.ByBus.CrossCutting.Notifications.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Logatti.ByBus.CrossCutting.Notifications.dll": {}
+        }
       }
     }
   },
   "libraries": {
+    "MediatR/4.0.1": {
+      "sha512": "nIgiOuD10aSrariE29T3/NdWKfwqOfyJhuuqdSD6RJa8vvYUxLAsWZ64UwYm7pF7yPIjM36M+3W0hpyPTAj4Gg==",
+      "type": "package",
+      "path": "mediatr/4.0.1",
+      "files": [
+        "lib/net45/MediatR.dll",
+        "lib/netstandard1.1/MediatR.dll",
+        "mediatr.4.0.1.nupkg.sha512",
+        "mediatr.nuspec"
+      ]
+    },
     "Microsoft.NETCore.App/2.1.0": {
       "sha512": "AvT774nTFgU8cYcGO9j1EMwuayKslxqYTurg32HGpWa2hEYNuW2+XgYVVNcZe6Ndbr84QX6fwaOZfd5n+1m2OA==",
       "type": "package",
@@ -673,10 +709,17 @@
         "netstandard.library.2.0.3.nupkg.sha512",
         "netstandard.library.nuspec"
       ]
+    },
+    "Logatti.ByBus.CrossCutting.Notifications/1.0.0": {
+      "type": "project",
+      "path": "../Logatti.ByBus.CrossCutting.Notifications/Logatti.ByBus.CrossCutting.Notifications.csproj",
+      "msbuildProject": "../Logatti.ByBus.CrossCutting.Notifications/Logatti.ByBus.CrossCutting.Notifications.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.1": [
+      "Logatti.ByBus.CrossCutting.Notifications >= 1.0.0",
+      "MediatR >= 4.0.1",
       "Microsoft.NETCore.App >= 2.1.0"
     ]
   },
@@ -687,11 +730,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\gusta\\OneDrive\\Área de Trabalho\\Repositorio\\ByBus\\Logatti.ByBus\\Logatti.ByBus.Domain\\Logatti.ByBus.Domain.csproj",
+      "projectUniqueName": "C:\\Users\\gusta\\OneDrive\\Área de Trabalho\\Repositorio\\ByBus\\src\\Backend\\Logatti.ByBus\\Logatti.ByBus.Domain\\Logatti.ByBus.Domain.csproj",
       "projectName": "Logatti.ByBus.Domain",
-      "projectPath": "C:\\Users\\gusta\\OneDrive\\Área de Trabalho\\Repositorio\\ByBus\\Logatti.ByBus\\Logatti.ByBus.Domain\\Logatti.ByBus.Domain.csproj",
+      "projectPath": "C:\\Users\\gusta\\OneDrive\\Área de Trabalho\\Repositorio\\ByBus\\src\\Backend\\Logatti.ByBus\\Logatti.ByBus.Domain\\Logatti.ByBus.Domain.csproj",
       "packagesPath": "C:\\Users\\gusta\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\gusta\\OneDrive\\Área de Trabalho\\Repositorio\\ByBus\\Logatti.ByBus\\Logatti.ByBus.Domain\\obj\\",
+      "outputPath": "C:\\Users\\gusta\\OneDrive\\Área de Trabalho\\Repositorio\\ByBus\\src\\Backend\\Logatti.ByBus\\Logatti.ByBus.Domain\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -710,7 +753,11 @@
       },
       "frameworks": {
         "netcoreapp2.1": {
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\gusta\\OneDrive\\Área de Trabalho\\Repositorio\\ByBus\\src\\Backend\\Logatti.ByBus\\Logatti.ByBus.CrossCutting.Notifications\\Logatti.ByBus.CrossCutting.Notifications.csproj": {
+              "projectPath": "C:\\Users\\gusta\\OneDrive\\Área de Trabalho\\Repositorio\\ByBus\\src\\Backend\\Logatti.ByBus\\Logatti.ByBus.CrossCutting.Notifications\\Logatti.ByBus.CrossCutting.Notifications.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -722,6 +769,10 @@
     "frameworks": {
       "netcoreapp2.1": {
         "dependencies": {
+          "MediatR": {
+            "target": "Package",
+            "version": "[4.0.1, )"
+          },
           "Microsoft.NETCore.App": {
             "suppressParent": "All",
             "target": "Package",

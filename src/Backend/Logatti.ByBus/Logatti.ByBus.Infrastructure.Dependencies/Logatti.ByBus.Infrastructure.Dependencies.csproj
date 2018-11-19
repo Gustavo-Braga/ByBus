@@ -4,4 +4,15 @@
     <TargetFramework>netcoreapp2.1</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="6.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="2.1.1" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="2.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Logatti.ByBus.CrossCutting.Notifications\Logatti.ByBus.CrossCutting.Notifications.csproj" />
+    <ProjectReference Include="..\Logatti.ByBus.Domain\Logatti.ByBus.Domain.csproj" />
+  </ItemGroup>
+
 </Project>

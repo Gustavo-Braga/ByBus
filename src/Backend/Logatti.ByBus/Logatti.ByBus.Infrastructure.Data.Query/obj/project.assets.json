@@ -687,11 +687,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\gusta\\OneDrive\\Área de Trabalho\\Repositorio\\ByBus\\Logatti.ByBus\\Logatti.ByBus.Infrastructure.Data.Query\\Logatti.ByBus.Infrastructure.Data.Query.csproj",
+      "projectUniqueName": "C:\\Users\\gusta\\OneDrive\\Área de Trabalho\\Repositorio\\ByBus\\src\\Backend\\Logatti.ByBus\\Logatti.ByBus.Infrastructure.Data.Query\\Logatti.ByBus.Infrastructure.Data.Query.csproj",
       "projectName": "Logatti.ByBus.Infrastructure.Data.Query",
-      "projectPath": "C:\\Users\\gusta\\OneDrive\\Área de Trabalho\\Repositorio\\ByBus\\Logatti.ByBus\\Logatti.ByBus.Infrastructure.Data.Query\\Logatti.ByBus.Infrastructure.Data.Query.csproj",
+      "projectPath": "C:\\Users\\gusta\\OneDrive\\Área de Trabalho\\Repositorio\\ByBus\\src\\Backend\\Logatti.ByBus\\Logatti.ByBus.Infrastructure.Data.Query\\Logatti.ByBus.Infrastructure.Data.Query.csproj",
       "packagesPath": "C:\\Users\\gusta\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\gusta\\OneDrive\\Área de Trabalho\\Repositorio\\ByBus\\Logatti.ByBus\\Logatti.ByBus.Infrastructure.Data.Query\\obj\\",
+      "outputPath": "C:\\Users\\gusta\\OneDrive\\Área de Trabalho\\Repositorio\\ByBus\\src\\Backend\\Logatti.ByBus\\Logatti.ByBus.Infrastructure.Data.Query\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
