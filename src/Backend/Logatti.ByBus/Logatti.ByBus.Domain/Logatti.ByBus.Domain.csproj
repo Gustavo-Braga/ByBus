@@ -5,9 +5,15 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="CommandHandler\" />
     <Folder Include="Entities\" />
-    <Folder Include="Interfaces\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MediatR" Version="4.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Logatti.ByBus.CrossCutting.Notifications\Logatti.ByBus.CrossCutting.Notifications.csproj" />
   </ItemGroup>
 
 </Project>

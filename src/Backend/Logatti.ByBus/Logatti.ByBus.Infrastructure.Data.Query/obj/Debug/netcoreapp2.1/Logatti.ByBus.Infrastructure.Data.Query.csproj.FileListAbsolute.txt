@@ -7,3 +7,11 @@ C:\Users\gusta\OneDrive\Área de Trabalho\Repositorio\ByBus\Logatti.ByBus\Logatt
 C:\Users\gusta\OneDrive\Área de Trabalho\Repositorio\ByBus\Logatti.ByBus\Logatti.ByBus.Infrastructure.Data.Query\obj\Debug\netcoreapp2.1\Logatti.ByBus.Infrastructure.Data.Query.AssemblyInfo.cs
 C:\Users\gusta\OneDrive\Área de Trabalho\Repositorio\ByBus\Logatti.ByBus\Logatti.ByBus.Infrastructure.Data.Query\obj\Debug\netcoreapp2.1\Logatti.ByBus.Infrastructure.Data.Query.dll
 C:\Users\gusta\OneDrive\Área de Trabalho\Repositorio\ByBus\Logatti.ByBus\Logatti.ByBus.Infrastructure.Data.Query\obj\Debug\netcoreapp2.1\Logatti.ByBus.Infrastructure.Data.Query.pdb
+C:\Users\gusta\OneDrive\Área de Trabalho\Repositorio\ByBus\src\Backend\Logatti.ByBus\Logatti.ByBus.Infrastructure.Data.Query\bin\Debug\netcoreapp2.1\Logatti.ByBus.Infrastructure.Data.Query.deps.json
+C:\Users\gusta\OneDrive\Área de Trabalho\Repositorio\ByBus\src\Backend\Logatti.ByBus\Logatti.ByBus.Infrastructure.Data.Query\bin\Debug\netcoreapp2.1\Logatti.ByBus.Infrastructure.Data.Query.dll
+C:\Users\gusta\OneDrive\Área de Trabalho\Repositorio\ByBus\src\Backend\Logatti.ByBus\Logatti.ByBus.Infrastructure.Data.Query\bin\Debug\netcoreapp2.1\Logatti.ByBus.Infrastructure.Data.Query.pdb
+C:\Users\gusta\OneDrive\Área de Trabalho\Repositorio\ByBus\src\Backend\Logatti.ByBus\Logatti.ByBus.Infrastructure.Data.Query\obj\Debug\netcoreapp2.1\Logatti.ByBus.Infrastructure.Data.Query.csproj.CoreCompileInputs.cache
+C:\Users\gusta\OneDrive\Área de Trabalho\Repositorio\ByBus\src\Backend\Logatti.ByBus\Logatti.ByBus.Infrastructure.Data.Query\obj\Debug\netcoreapp2.1\Logatti.ByBus.Infrastructure.Data.Query.AssemblyInfoInputs.cache
+C:\Users\gusta\OneDrive\Área de Trabalho\Repositorio\ByBus\src\Backend\Logatti.ByBus\Logatti.ByBus.Infrastructure.Data.Query\obj\Debug\netcoreapp2.1\Logatti.ByBus.Infrastructure.Data.Query.AssemblyInfo.cs
+C:\Users\gusta\OneDrive\Área de Trabalho\Repositorio\ByBus\src\Backend\Logatti.ByBus\Logatti.ByBus.Infrastructure.Data.Query\obj\Debug\netcoreapp2.1\Logatti.ByBus.Infrastructure.Data.Query.dll
+C:\Users\gusta\OneDrive\Área de Trabalho\Repositorio\ByBus\src\Backend\Logatti.ByBus\Logatti.ByBus.Infrastructure.Data.Query\obj\Debug\netcoreapp2.1\Logatti.ByBus.Infrastructure.Data.Query.pdb
