@@ -13,6 +13,7 @@
   <ItemGroup>
     <ProjectReference Include="..\Logatti.ByBus.CrossCutting.Notifications\Logatti.ByBus.CrossCutting.Notifications.csproj" />
     <ProjectReference Include="..\Logatti.ByBus.Domain\Logatti.ByBus.Domain.csproj" />
+    <ProjectReference Include="..\Logatti.ByBus.Infrastructure.Data.Command\Logatti.ByBus.Infrastructure.Data.Command.csproj" />
   </ItemGroup>
 
 </Project>

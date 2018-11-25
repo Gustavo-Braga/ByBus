@@ -9,12 +9,12 @@ C:\Users\gusta\OneDrive\Área de Trabalho\Repositorio\ByBus\Logatti.ByBus\Logatt
 C:\Users\gusta\OneDrive\Área de Trabalho\Repositorio\ByBus\src\Backend\Logatti.ByBus\Logatti.ByBus.Domain\bin\Debug\netcoreapp2.1\Logatti.ByBus.Domain.deps.json
 C:\Users\gusta\OneDrive\Área de Trabalho\Repositorio\ByBus\src\Backend\Logatti.ByBus\Logatti.ByBus.Domain\bin\Debug\netcoreapp2.1\Logatti.ByBus.Domain.dll
 C:\Users\gusta\OneDrive\Área de Trabalho\Repositorio\ByBus\src\Backend\Logatti.ByBus\Logatti.ByBus.Domain\bin\Debug\netcoreapp2.1\Logatti.ByBus.Domain.pdb
+C:\Users\gusta\OneDrive\Área de Trabalho\Repositorio\ByBus\src\Backend\Logatti.ByBus\Logatti.ByBus.Domain\bin\Debug\netcoreapp2.1\Logatti.ByBus.CrossCutting.Notifications.dll
+C:\Users\gusta\OneDrive\Área de Trabalho\Repositorio\ByBus\src\Backend\Logatti.ByBus\Logatti.ByBus.Domain\bin\Debug\netcoreapp2.1\Logatti.ByBus.CrossCutting.Notifications.pdb
 C:\Users\gusta\OneDrive\Área de Trabalho\Repositorio\ByBus\src\Backend\Logatti.ByBus\Logatti.ByBus.Domain\obj\Debug\netcoreapp2.1\Logatti.ByBus.Domain.csprojAssemblyReference.cache
 C:\Users\gusta\OneDrive\Área de Trabalho\Repositorio\ByBus\src\Backend\Logatti.ByBus\Logatti.ByBus.Domain\obj\Debug\netcoreapp2.1\Logatti.ByBus.Domain.csproj.CoreCompileInputs.cache
 C:\Users\gusta\OneDrive\Área de Trabalho\Repositorio\ByBus\src\Backend\Logatti.ByBus\Logatti.ByBus.Domain\obj\Debug\netcoreapp2.1\Logatti.ByBus.Domain.AssemblyInfoInputs.cache
 C:\Users\gusta\OneDrive\Área de Trabalho\Repositorio\ByBus\src\Backend\Logatti.ByBus\Logatti.ByBus.Domain\obj\Debug\netcoreapp2.1\Logatti.ByBus.Domain.AssemblyInfo.cs
+C:\Users\gusta\OneDrive\Área de Trabalho\Repositorio\ByBus\src\Backend\Logatti.ByBus\Logatti.ByBus.Domain\obj\Debug\netcoreapp2.1\Logatti.ByBus.Domain.csproj.CopyComplete
 C:\Users\gusta\OneDrive\Área de Trabalho\Repositorio\ByBus\src\Backend\Logatti.ByBus\Logatti.ByBus.Domain\obj\Debug\netcoreapp2.1\Logatti.ByBus.Domain.dll
 C:\Users\gusta\OneDrive\Área de Trabalho\Repositorio\ByBus\src\Backend\Logatti.ByBus\Logatti.ByBus.Domain\obj\Debug\netcoreapp2.1\Logatti.ByBus.Domain.pdb
-C:\Users\gusta\OneDrive\Área de Trabalho\Repositorio\ByBus\src\Backend\Logatti.ByBus\Logatti.ByBus.Domain\bin\Debug\netcoreapp2.1\Logatti.ByBus.CrossCutting.Notifications.dll
-C:\Users\gusta\OneDrive\Área de Trabalho\Repositorio\ByBus\src\Backend\Logatti.ByBus\Logatti.ByBus.Domain\bin\Debug\netcoreapp2.1\Logatti.ByBus.CrossCutting.Notifications.pdb
-C:\Users\gusta\OneDrive\Área de Trabalho\Repositorio\ByBus\src\Backend\Logatti.ByBus\Logatti.ByBus.Domain\obj\Debug\netcoreapp2.1\Logatti.ByBus.Domain.csproj.CopyComplete

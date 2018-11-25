@@ -1,9 +1,9 @@
 C:\Users\gusta\OneDrive\Área de Trabalho\Repositorio\ByBus\src\Backend\Logatti.ByBus\Logatti.ByBus.CrossCutting.Notifications\bin\Debug\netcoreapp2.1\Logatti.ByBus.CrossCutting.Notifications.deps.json
 C:\Users\gusta\OneDrive\Área de Trabalho\Repositorio\ByBus\src\Backend\Logatti.ByBus\Logatti.ByBus.CrossCutting.Notifications\bin\Debug\netcoreapp2.1\Logatti.ByBus.CrossCutting.Notifications.dll
+C:\Users\gusta\OneDrive\Área de Trabalho\Repositorio\ByBus\src\Backend\Logatti.ByBus\Logatti.ByBus.CrossCutting.Notifications\bin\Debug\netcoreapp2.1\Logatti.ByBus.CrossCutting.Notifications.pdb
 C:\Users\gusta\OneDrive\Área de Trabalho\Repositorio\ByBus\src\Backend\Logatti.ByBus\Logatti.ByBus.CrossCutting.Notifications\obj\Debug\netcoreapp2.1\Logatti.ByBus.CrossCutting.Notifications.csproj.CoreCompileInputs.cache
 C:\Users\gusta\OneDrive\Área de Trabalho\Repositorio\ByBus\src\Backend\Logatti.ByBus\Logatti.ByBus.CrossCutting.Notifications\obj\Debug\netcoreapp2.1\Logatti.ByBus.CrossCutting.Notifications.AssemblyInfoInputs.cache
 C:\Users\gusta\OneDrive\Área de Trabalho\Repositorio\ByBus\src\Backend\Logatti.ByBus\Logatti.ByBus.CrossCutting.Notifications\obj\Debug\netcoreapp2.1\Logatti.ByBus.CrossCutting.Notifications.AssemblyInfo.cs
-C:\Users\gusta\OneDrive\Área de Trabalho\Repositorio\ByBus\src\Backend\Logatti.ByBus\Logatti.ByBus.CrossCutting.Notifications\bin\Debug\netcoreapp2.1\Logatti.ByBus.CrossCutting.Notifications.pdb
 C:\Users\gusta\OneDrive\Área de Trabalho\Repositorio\ByBus\src\Backend\Logatti.ByBus\Logatti.ByBus.CrossCutting.Notifications\obj\Debug\netcoreapp2.1\Logatti.ByBus.CrossCutting.Notifications.dll
 C:\Users\gusta\OneDrive\Área de Trabalho\Repositorio\ByBus\src\Backend\Logatti.ByBus\Logatti.ByBus.CrossCutting.Notifications\obj\Debug\netcoreapp2.1\Logatti.ByBus.CrossCutting.Notifications.pdb
 C:\Users\gusta\OneDrive\Área de Trabalho\Repositorio\ByBus\src\Backend\Logatti.ByBus\Logatti.ByBus.CrossCutting.Notifications\obj\Debug\netcoreapp2.1\Logatti.ByBus.CrossCutting.Notifications.csprojAssemblyReference.cache

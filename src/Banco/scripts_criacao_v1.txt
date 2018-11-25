@@ -1,0 +1,44 @@
+CREATE TABLE [dbo].[Empresa] (
+   [CNPJ] NVARCHAR (14)  NOT NULL,
+   [nome] NVARCHAR (MAX) NOT NULL,
+   PRIMARY KEY CLUSTERED ([CNPJ] ASC)
+);
+
+CREATE TABLE [dbo].[Horario] (
+    [id]         INT            IDENTITY (1, 1) NOT NULL,
+    [idSegmento] INT            NOT NULL,
+    [idTipoDia]  INT            NOT NULL,
+    [TabelaHoras]    NVARCHAR (MAX) NOT NULL,
+    PRIMARY KEY CLUSTERED ([id] ASC)
+);
+
+
+
+CREATE TABLE [dbo].[Linha] (
+   [id]   INT            IDENTITY (1, 1) NOT NULL,
+   [nome] NVARCHAR (MAX) NOT NULL,
+   [CNPJ] NVARCHAR (14)  NOT NULL,
+   PRIMARY KEY CLUSTERED ([id] ASC),
+   FOREIGN KEY ([CNPJ]) REFERENCES [dbo].[Empresa] ([CNPJ])
+);
+CREATE TABLE [dbo].[Onibus] (
+   [id]      INT           IDENTITY (1, 1) NOT NULL,
+   [CNPJ]    NVARCHAR (14) NOT NULL,
+   [IdLinha] INT           NOT NULL,
+   PRIMARY KEY CLUSTERED ([id] ASC)
+);
+
+CREATE TABLE [dbo].[Segmento] (
+   [id]         INT            IDENTITY (1, 1) NOT NULL,
+   [IdLinha]    INT            NOT NULL,
+   [nome]       NVARCHAR (MAX) NULL,
+   [logradouro] NVARCHAR (MAX) NULL,
+   PRIMARY KEY CLUSTERED ([id] ASC),
+   FOREIGN KEY ([IdLinha]) REFERENCES [dbo].[Linha] ([id])
+);
+
+CREATE TABLE [dbo].[TipoDia] (
+   [id]   INT            IDENTITY (1, 1) NOT NULL,
+   [Tipo] NVARCHAR (MAX) NOT NULL,
+   PRIMARY KEY CLUSTERED ([id] ASC)
+);

@@ -7,12 +7,12 @@ namespace Logatti.ByBus.Domain.CommandHandler.Bus
 {
     public class BusRouteByIdCommand : IRequest<BusRouteResponse>
     {
-        public BusRouteByIdCommand(int id)
+        public BusRouteByIdCommand(string id)
         {
             Id = id;
         }
 
-        public int Id { get; set; }
+        public string Id { get; set; }
 
     }
 }
