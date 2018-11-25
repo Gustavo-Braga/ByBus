@@ -18,6 +18,11 @@ namespace Logatti.ByBus.Infrastructure.Dependencies
         {
             services.AddScoped<ByBusContext>();
             services.AddScoped<IEmpresaRepository, EmpresaRepository>();
+            services.AddScoped<ILinhaRepository, LinhaRepository>();
+            services.AddScoped<IOnibusRepository, OnibusRepository>();
+            services.AddScoped<ISegmentoRepository, SegmentoRepository>();
+            services.AddScoped<IHorarioRepository, HorarioRepository>();
+            services.AddScoped<ITipoDiaRepository, TipoDiaRepository>();
 
             //CrossCutting
             services.AddScoped<INotificationHandler<Notification>, NotificationHandler>();
