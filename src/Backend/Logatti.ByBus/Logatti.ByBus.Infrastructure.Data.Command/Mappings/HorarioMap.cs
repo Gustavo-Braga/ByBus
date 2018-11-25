@@ -20,6 +20,8 @@ namespace Logatti.ByBus.Infrastructure.Data.Command.Mappings
                 .WithMany(x => x.Horarios)
                 .HasForeignKey(x => x.IdSegmento);
 
+            //builder.HasOne(x => x.TipoDia);
+
         }
     }
 }

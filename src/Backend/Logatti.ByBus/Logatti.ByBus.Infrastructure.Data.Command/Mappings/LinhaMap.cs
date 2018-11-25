@@ -15,8 +15,9 @@ namespace Logatti.ByBus.Infrastructure.Data.Command.Mappings
             builder.Property(x => x.Nome).IsRequired();
             builder.Property(x => x.CNPJ).IsRequired();
 
-            //builder.HasOne(x => x.Onibus)
-            //   .WithOne(y => y.Linha);
+            builder.HasMany(x => x.Onibus)
+                .WithOne(x=>x.Linha)
+                .HasForeignKey(x=>x.IdLinha);
 
             builder.HasMany(x => x.Segmentos);
 

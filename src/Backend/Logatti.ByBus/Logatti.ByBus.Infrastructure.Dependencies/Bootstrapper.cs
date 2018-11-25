@@ -17,6 +17,8 @@ namespace Logatti.ByBus.Infrastructure.Dependencies
         public static void Initialize(IServiceCollection services)
         {
             services.AddScoped<ByBusContext>();
+
+            //Repository
             services.AddScoped<IEmpresaRepository, EmpresaRepository>();
             services.AddScoped<ILinhaRepository, LinhaRepository>();
             services.AddScoped<IOnibusRepository, OnibusRepository>();

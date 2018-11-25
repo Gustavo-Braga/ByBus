@@ -18,10 +18,7 @@ namespace Logatti.ByBus.Infrastructure.Data.Command.Mappings
             builder.HasOne(x => x.Empresa)
                 .WithMany(x => x.Onibus)
                 .HasForeignKey(x => x.CNPJ);
-
-            builder.HasOne(x => x.Linha);
-                //.WithOne(x => x.Onibus);
-            //.HasForeignKey(x => x.IdLinha);
+                
         }
     }
 }

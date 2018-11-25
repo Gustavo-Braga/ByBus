@@ -10,10 +10,17 @@ namespace Logatti.ByBus.Domain.Entities
         {
 
         }
+
+        public Linha(string nome, string cNPJ)
+        {
+            Nome = nome;
+            CNPJ = cNPJ;
+        }
+
         public int Id { get; set; }
         public string Nome { get; set; }
         public string CNPJ { get; set; }
-        //public Onibus Onibus { get; set; }
+        public ICollection<Onibus> Onibus { get; set; }
         public ICollection<Segmento> Segmentos { get; set; }
     }
 }
