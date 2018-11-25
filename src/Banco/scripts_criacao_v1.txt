@@ -5,12 +5,13 @@ CREATE TABLE [dbo].[Empresa] (
 );
 
 CREATE TABLE [dbo].[Horario] (
-   [id]         INT            IDENTITY (1, 1) NOT NULL,
-   [idSegmento] INT            NOT NULL,
-   [idTipoDia]  INT            NOT NULL,
-   [Horario]    NVARCHAR (MAX) NOT NULL,
-   PRIMARY KEY CLUSTERED ([id] ASC)
+    [id]         INT            IDENTITY (1, 1) NOT NULL,
+    [idSegmento] INT            NOT NULL,
+    [idTipoDia]  INT            NOT NULL,
+    [TabelaHoras]    NVARCHAR (MAX) NOT NULL,
+    PRIMARY KEY CLUSTERED ([id] ASC)
 );
+
 
 
 CREATE TABLE [dbo].[Linha] (

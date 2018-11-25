@@ -5,6 +5,8 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Swashbuckle.AspNetCore.Swagger;
 using MediatR;
+using Logatti.ByBus.Infrastructure.Data.Command.Context;
+using Microsoft.EntityFrameworkCore;
 
 namespace Logatti.ByBus.API
 {
@@ -12,10 +14,10 @@ namespace Logatti.ByBus.API
     {
         public Startup(IConfiguration configuration)
         {
-            Configuration = configuration;
+            _configuration = configuration;
         }
 
-        public IConfiguration Configuration { get; }
+        public IConfiguration _configuration { get; }
 
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
@@ -44,6 +46,7 @@ namespace Logatti.ByBus.API
                 });
             });
             services.AddMediatR(typeof(Startup));
+            services.AddDbContext<ByBusContext>(options => options.UseSqlServer(_configuration.GetConnectionString("ByBusConn")));
             Bootstrapper.Initialize(services);
         }
 
