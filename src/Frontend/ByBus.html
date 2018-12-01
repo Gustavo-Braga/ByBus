@@ -24,7 +24,7 @@
           <a class="navbar-brand">ByBus</a>
           <form class="form-inline">
             <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Search">
-            <button class="btn btn-outline-info my-2 my-sm-0" id="id">Enviar</button>
+            <button class="btn btn-outline-info my-2 my-sm-0" id="enviar">Enviar</button>
           </form>
         </nav>
 
@@ -82,29 +82,29 @@
          title: 'Hello World!'
        });
            var waypts = [];
-           waypts.push({location:" av. Engenheiro Roberto Lepre Sampaio,ARARAQUARA, SP",stopover:true});
-           waypts.push({location:" rua José João Biffi ,ARARAQUARA, SP",stopover:true});
-           waypts.push({location:" rua Matão,ARARAQUARA, SP",stopover:true});
-           waypts.push({location:"rua São José do Rio Preto ,ARARAQUARA, SP",stopover:true});
-           waypts.push({location:" av. Santa Adélia,ARARAQUARA, SP",stopover:true});
-           waypts.push({location:" rua Jurupema,ARARAQUARA, SP",stopover:true});
-           waypts.push({location:" rua Pindorama,ARARAQUARA, SP",stopover:true});
-           waypts.push({location:" av mirassol,ARARAQUARA, SP",stopover:true});
-           waypts.push({location:" av taquaritinga,ARARAQUARA, SP",stopover:true});
-           waypts.push({location:" rua Fernando Prestes ,ARARAQUARA, SP",stopover:true});
-           waypts.push({location:"av. Votuporanga ,ARARAQUARA, SP",stopover:true});
-           waypts.push({location:" av. América,ARARAQUARA, SP",stopover:true});
-           waypts.push({location:"rua Acre ,ARARAQUARA, SP",stopover:true});
-           waypts.push({location:"rua sao jose do rio preto ,ARARAQUARA, SP",stopover:true});
-           waypts.push({location:" rua Geraldo Moreira,ARARAQUARA, SP",stopover:true});
-           waypts.push({location:"av. guanabara,ARARAQUARA, SP",stopover:true});
-           waypts.push({location:"av. Carlos Batista Magalhães,ARARAQUARA, SP",stopover:true});
-           waypts.push({location:"Rua Antonio Frederico Ozanan,ARARAQUARA, SP",stopover:true});
-           waypts.push({location:"av. Márzio Munhoz, SP",stopover:true});
-           waypts.push({location:"rua José do Patrocinio,ARARAQUARA, SP",stopover:true});
-           waypts.push({location:"av. Carlos Batista Magalhães,ARARAQUARA, SP",stopover:true});
-           waypts.push({location:"rua Marechal D. da Fonseca,ARARAQUARA, SP",stopover:true});
-           waypts.push({location:"av. Padre Antônio Cezarino,ARARAQUARA, SP",stopover:true});
+          //  waypts.push({location:" av. Engenheiro Roberto Lepre Sampaio,ARARAQUARA, SP",stopover:true});
+          //  waypts.push({location:" rua José João Biffi ,ARARAQUARA, SP",stopover:true});
+          //  waypts.push({location:" rua Matão,ARARAQUARA, SP",stopover:true});
+          //  waypts.push({location:"rua São José do Rio Preto ,ARARAQUARA, SP",stopover:true});
+          //  waypts.push({location:" av. Santa Adélia,ARARAQUARA, SP",stopover:true});
+          //  waypts.push({location:" rua Jurupema,ARARAQUARA, SP",stopover:true});
+          //  waypts.push({location:" rua Pindorama,ARARAQUARA, SP",stopover:true});
+          //  waypts.push({location:" av mirassol,ARARAQUARA, SP",stopover:true});
+          //  waypts.push({location:" av taquaritinga,ARARAQUARA, SP",stopover:true});
+          //  waypts.push({location:" rua Fernando Prestes ,ARARAQUARA, SP",stopover:true});
+          //  waypts.push({location:"av. Votuporanga ,ARARAQUARA, SP",stopover:true});
+          //  waypts.push({location:" av. América,ARARAQUARA, SP",stopover:true});
+          //  waypts.push({location:"rua Acre ,ARARAQUARA, SP",stopover:true});
+          //  waypts.push({location:"rua sao jose do rio preto ,ARARAQUARA, SP",stopover:true});
+          //  waypts.push({location:" rua Geraldo Moreira,ARARAQUARA, SP",stopover:true});
+          //  waypts.push({location:"av. guanabara,ARARAQUARA, SP",stopover:true});
+          //  waypts.push({location:"av. Carlos Batista Magalhães,ARARAQUARA, SP",stopover:true});
+          //  waypts.push({location:"Rua Antonio Frederico Ozanan,ARARAQUARA, SP",stopover:true});
+          //  waypts.push({location:"av. Márzio Munhoz, SP",stopover:true});
+          //  waypts.push({location:"rua José do Patrocinio,ARARAQUARA, SP",stopover:true});
+          //  waypts.push({location:"av. Carlos Batista Magalhães,ARARAQUARA, SP",stopover:true});
+          //  waypts.push({location:"rua Marechal D. da Fonseca,ARARAQUARA, SP",stopover:true});
+          //  waypts.push({location:"av. Padre Antônio Cezarino,ARARAQUARA, SP",stopover:true});
    
             directionsService.route({
              origin: "av. São João,ARARAQUARA, SP",
@@ -119,9 +119,25 @@
                window.alert('Directions request failed due to ' + status);
              }
            });
+
+           var circle = new google.maps.Circle({
+            strokeColor: '#FF0000',
+            strokeOpacity: 1,
+            strokeWeight: 2,
+            fillColor: '#FF0000',
+            fillOpacity: 0.2,
+            map: map,
+            center: Marker.position,
+            draggable: true,
+            editable:true,
+            radius: 100
+          });
    
-         var a = google.maps.geometry.spherical.computeDistanceBetween(Marker.getPosition(), circle.getCenter()) <= circle.getRadius();
-        console.log(a);
+          $("#enviar").click(function(){
+            var a = google.maps.geometry.spherical.computeDistanceBetween(Marker.getPosition(), circle.getCenter()) <= circle.getRadius();
+            console.log(a);
+          })
+       
    
        var infowindow = new google.maps.InfoWindow({
          content: "TESTE DE <br>INFOWINDOW"
@@ -137,10 +153,18 @@
       </div>
     </div>
   </div>
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBvS350dYBc6FhW-smhH1__EH_DgTI-WVk&callback=initMap">
     </script>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBvS350dYBc6FhW-smhH1__EH_DgTI-WVk&libraries=geometry">
       </script>
+ <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+ <!-- <script type="text/javascript" src="ByBus.js"></script> -->
+
   </body>
 </html>
