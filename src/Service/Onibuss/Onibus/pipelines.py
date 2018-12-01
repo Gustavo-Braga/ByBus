@@ -4,10 +4,48 @@
 #
 # Don't forget to add your pipeline to the ITEM_PIPELINES setting
 # See: https://doc.scrapy.org/en/latest/topics/item-pipeline.html
-import pyodbc
+import sqlite3
 import scrapy
 
 class OnibusPipeline(object):
+
+    def process_item(self, item, spider):
+        self.conn.execute(
+            'insert into Empresa() values (:CNPJ, :nome)',
+            'insert into Linha() values (:nome, :CNPJ)',
+            'insert into Onibus() values (:CNPJ, :IdLinha)',
+            'insert into Segmento() values (:IdLinha, :nome, :logradouro)',
+            'insert into TipoDia() values(:Tipo)',
+            'insert into Horario() value(:IdSegmento, :IdTipoDIa, :tabelaHoras)',
+            item
+        )
+        self.conn.commit()
+        return item
+
+    def create_table(self):
+        result = self.conn.execute(
+            'select name from sqlite_master where type = "table" and name = "Empresa", name = "Linha", name = "Onibus", name = "Segmento", name = "TipoDia", name = "Horario"'
+        )
+        try:
+            value = next(result)
+        except StopIteration as ex:
+            self.conn.execute(
+                'create table Empresa(CNPJ text PRIMARY KEY, nome text NOT NULL)',
+                'create table Linha(id INTEGER PRIMARY KEY, nome text not null, CNPJ text, foreign key (CNPJ) references Empresa (CNPJ))',
+                'create table Onibus(id INTEGER PRIMARY KEY, CNPJ text, IdLinha integer, foreign key (CNPJ) references Empresa (CNPJ), foreign key (IdLinha) references Linha(id))',
+                'create table Segmento(id INTEGER PRIMARY KEY, IdLinha integer, nome text, logradouro text, foreign key (IdLinha) references Linha(id))',
+                'create table TipoDia (id INTEGER PRIMARY KEY, Tipo text)',
+                'create table Horario(id INTEGER PRIMARY KEY, IdSegmento integer, IdTipoDia integer, tabelaHoras text, foreign key (IdSegmento) references Segmento(id), foreign key (IdTipoDia) references TipoDia (id))'
+            )
+
+    def open_spider(self, spider):
+        self.conn = sqlite3.connect('db.Onibus')
+        self.create_table()
+
+    def close_spider(self, spider):
+        self.conn.close()
+
+# class OnibusPipeline(object):
  
     # def process_item(self, item, spider):
 
