@@ -1,5 +1,4 @@
-import scrapy
-import Linhas from Onibus 
+import scrapy 
 
 class Empresa(scrapy.Item):
 
@@ -7,4 +6,3 @@ class Empresa(scrapy.Item):
     Nome = scrapy.Field()
     
   
-

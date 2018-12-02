@@ -1,7 +1,4 @@
 import scrapy
-
-import Itinerario from Onibus
-import Horario from Onibus
 import Linha from Onibus
 
 class Segmento(scrapy.Item):

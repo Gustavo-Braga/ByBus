@@ -1,9 +1,10 @@
 import scrapy
 import Empresa from Onibus 
-import Linhas from Onibus
+import Linha from Onibus
 
 class Onibus(scrapy.item):
 
-    CodOnibus = scrapy.Field()
+   
     CNPJ = Empresa.CNPJ
-    Linha = Nome.Linhas
+    Linha = Nome.Linha
+

@@ -11,12 +11,12 @@ class OnibusPipeline(object):
 
     def process_item(self, item, spider):
         self.conn.execute(
-            'insert into Empresa() values (:CNPJ, :nome)',
-            'insert into Linha() values (:nome, :CNPJ)',
-            'insert into Onibus() values (:CNPJ, :IdLinha)',
-            'insert into Segmento() values (:IdLinha, :nome, :logradouro)',
-            'insert into TipoDia() values(:Tipo)',
-            'insert into Horario() value(:IdSegmento, :IdTipoDIa, :tabelaHoras)',
+            'insert into Empresa() values (:CNPJ, :nomeEmpresa)',            
+            # 'insert into Linha() values (:nomeLinha, :CNPJ)',
+            # 'insert into Onibus() values (:CNPJ, :IdLinha)',
+            # 'insert into Segmento() values (:IdLinha, :nomeSegmento, :logradouro)',
+            # 'insert into TipoDia() values(:Tipo)',
+            # 'insert into Horario() value(:IdSegmento, :IdTipoDIa, :tabelaHoras)',
             item
         )
         self.conn.commit()
@@ -24,18 +24,18 @@ class OnibusPipeline(object):
 
     def create_table(self):
         result = self.conn.execute(
-            'select name from sqlite_master where type = "table" and name = "Empresa", name = "Linha", name = "Onibus", name = "Segmento", name = "TipoDia", name = "Horario"'
+            'select name from sqlite_master where type = "table" and name = "Empresa"'
         )
         try:
             value = next(result)
         except StopIteration as ex:
             self.conn.execute(
-                'create table Empresa(CNPJ text PRIMARY KEY, nome text NOT NULL)',
-                'create table Linha(id INTEGER PRIMARY KEY, nome text not null, CNPJ text, foreign key (CNPJ) references Empresa (CNPJ))',
-                'create table Onibus(id INTEGER PRIMARY KEY, CNPJ text, IdLinha integer, foreign key (CNPJ) references Empresa (CNPJ), foreign key (IdLinha) references Linha(id))',
-                'create table Segmento(id INTEGER PRIMARY KEY, IdLinha integer, nome text, logradouro text, foreign key (IdLinha) references Linha(id))',
-                'create table TipoDia (id INTEGER PRIMARY KEY, Tipo text)',
-                'create table Horario(id INTEGER PRIMARY KEY, IdSegmento integer, IdTipoDia integer, tabelaHoras text, foreign key (IdSegmento) references Segmento(id), foreign key (IdTipoDia) references TipoDia (id))'
+                'create table Empresa(CNPJ text PRIMARY KEY, nomeEmpresa text NOT NULL)'
+                # 'create table Linha(id INTEGER PRIMARY KEY, nomeLinha text not null, CNPJ text, foreign key (CNPJ) references Empresa (CNPJ))',
+                # 'create table Onibus(id INTEGER PRIMARY KEY, CNPJ text, IdLinha integer, foreign key (CNPJ) references Empresa (CNPJ), foreign key (IdLinha) references Linha(id))',
+                # 'create table Segmento(id INTEGER PRIMARY KEY, IdLinha integer, nomeSegmento text, logradouro text, foreign key (IdLinha) references Linha(id))',
+                # 'create table TipoDia (id INTEGER PRIMARY KEY, Tipo text)',
+                # 'create table Horario(id INTEGER PRIMARY KEY, IdSegmento integer, IdTipoDia integer, tabelaHoras text, foreign key (IdSegmento) references Segmento(id), foreign key (IdTipoDia) references TipoDia (id))'
             )
 
     def open_spider(self, spider):
