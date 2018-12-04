@@ -48,10 +48,7 @@ namespace Logatti.ByBus.Domain.CommandHandler.Bus
             var e = _horarioRepository.Get();
             var f = _tipoDiaRepository.Get();
 
-
-
-            await Mediator.Publish(new Notification("Bus", $"Erro teste"));
-            return await Task.FromResult(default(BusRouteResponse));
+            return new BusRouteResponse();
         }
     }
 }

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Geolocation</title>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+   
+    <style>
+            #map {
+              height: 100%;
+            }
+            html, body {
+              height: 100%;
+              margin: 0;
+              padding: 0;
+            }
+          </style>    
+</head>
+  <body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+      <nav class="navbar navbar-light bg-light">
+          <a class="navbar-brand">ByBus</a>
+          <form class="form-inline">
+            <input class="form-control mr-sm-2" type="search" id="txtPesquisar" placeholder="Pesquisar" aria-label="Search">
+            <button class="btn btn-outline-info my-2 my-sm-0" id="btnPesquisar">Pesquisar</button>
+          </form>
+        </nav>
+
+<div class="row">
+  <div class="col-2">
+      <div class="clasTeste">
+          <ul class="side-nav">
+              <li role="presentation"><a href="#">Empresas</a></li>
+              <li role="presentation"><a href="#">Horarios</a></li>
+              <li role="presentation"><a href="#">....</a></li>
+              
+            </ul>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+      </div>
+  </div>
+  <div class="col-9">
+    <div id="map">
+   <script>
+      function initMap() {
+        latlng = {};
+       navigator.geolocation.getCurrentPosition(function(position) {
+         latlng = {
+             lat: position.coords.latitude,
+             lng: position.coords.longitude
+         };
+         map = new google.maps.Map(document.getElementById('map'), {
+           center:  latlng,
+           zoom: 18
+         });
+         
+   
+       var Marker = new google.maps.Marker({
+         position:latlng,
+        //  position: {
+        //      lat: -21.7820448,
+        //      lng: -48.1474005
+        //  },
+         map: map,
+         title: 'Ponto de Referencia'
+       });
+  
+           
+
+
+
+           var circle = new google.maps.Circle({
+            strokeColor: '#FF0000',
+            strokeOpacity: 1,
+            strokeWeight: 2,
+            fillColor: '#FF0000',
+            fillOpacity: 0.2,
+            map: map,
+            center: Marker.position,
+            draggable: true,
+            editable:true,
+            radius: 100
+          });
+
+          // $("#btnPesquisar").click(function(){
+          //   var param = $("#txtPesquisar").val();
+          //   var a = {}
+          //   $.ajax({
+          //     method: 'POST',
+          //     url: 'https://localhost:44369/api/v1/Bus/BusRouteById?id='+param,
+          //     success: function (res) {
+          //       console.log("success");
+          //       console.log(res);
+          //       a = res.data();
+          //       alert("success -> "+a);
+
+          //       return a;
+          //     },
+          //     error: function (res) {
+          //         console.log("error");
+          //         console.log(res);
+          //         alert("error");
+          //     }
+          // })
+          // })
+
+       
+  
+     });//navigator
+     };//initMap
+       </script>
+
+<div id ="modalTeste" class="modal fade" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">Modal title</h4>
+        </div>
+        <div class="modal-body">
+          <p>One fine body&hellip;</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div><!-- /.modal -->
+
+
+
+      </div>
+    </div>
+  </div>
+
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBvS350dYBc6FhW-smhH1__EH_DgTI-WVk&callback=initMap">
+    </script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBvS350dYBc6FhW-smhH1__EH_DgTI-WVk&libraries=geometry">
+    </script>
+
+ <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+ 
+ <!-- <script type="text/javascript" src="ByBus.js"></script> -->
+
+  </body>
+</html>

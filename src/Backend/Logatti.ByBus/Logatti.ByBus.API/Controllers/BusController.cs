@@ -20,8 +20,9 @@ namespace Logatti.ByBus.API.Controllers
 
         [Route("BusRouteById")]
         [HttpPost]
-        public async Task<IActionResult> BusRouteById([FromBody] BusRouteByIdCommand command)
+        public async Task<IActionResult> BusRouteById(string id)
         {
+            var command = new BusRouteByIdCommand(id);
             return await CreateResponse(async () => await mediator.Send(command));
         }
     }

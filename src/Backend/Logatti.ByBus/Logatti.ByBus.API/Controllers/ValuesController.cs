@@ -11,6 +11,7 @@ namespace Logatti.ByBus.API.Controllers
     public class ValuesController : ControllerBase
     {
         // GET api/values
+        [Route("get")]
         [HttpGet]
         public ActionResult<IEnumerable<string>> Get()
         {
